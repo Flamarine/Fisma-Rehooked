@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:knowledge_book"
+		},
+		"title":{
+			"text": "plug",
+			"color": "green"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"show_toast": "true",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"plug": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+			"item": {
+					"item": "minecraft:knowledge_book",
+					"nbt":	"{fisma_f:1}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/plug"
+	}
+}

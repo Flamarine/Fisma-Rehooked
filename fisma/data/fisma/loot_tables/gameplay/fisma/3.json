@@ -1,0 +1,43 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "quality": 1,
+          "name": "fisma:gameplay/fishing/treasure"
+        },
+		{
+          "type": "minecraft:empty",
+          "weight": 10,
+          "quality": -3
+        }
+      ]
+    },
+	{
+      "rolls": 1,
+      "entries": [
+		{
+          "type": "minecraft:item",
+          "weight": 4,
+          "quality": -3,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{fisma_run:1,fisma_t:\"tnt\"}"
+            }
+          ],
+          "name": "minecraft:structure_void"
+        },
+		{
+          "type": "minecraft:empty",
+          "weight": 20,
+          "quality": 4
+        }
+      ]
+    }
+  ]
+}

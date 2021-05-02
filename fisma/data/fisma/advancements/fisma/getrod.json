@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fishing_rod"
+		},
+		"title":{
+			"translate": "advancements.fi.getrod.title"
+		},
+		"description": {
+			"translate": "advancements.fi.getrod.description"
+		}
+	},
+	"parent": "fisma:fisma/root",
+	"criteria": {
+		"get": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:fishing_rod",
+					"count":1,
+					"nbt":	"{fisma:1}"
+				}]
+			}
+		}
+	}
+}

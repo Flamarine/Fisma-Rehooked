@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tropical_fish",
+			"nbt": "{CustomModelData:613003}"
+		},
+		"title":{
+			"translate": "item.fi.crayfish"
+		},
+		"description": {
+			"translate": "advancements.fi.fish3.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/handbook",
+	"criteria": {
+		"fi3": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish",
+					"nbt":	"{fisma:1,CustomModelData:613003}"
+				}]
+			}
+		}
+	}
+}

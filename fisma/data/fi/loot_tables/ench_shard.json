@@ -1,0 +1,17 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "minecraft:prismarine_shard",
+			"functions": [{
+				"function": "minecraft:set_nbt",
+				"tag": "{Enchantments:[{lvl:1s,id:\"minecraft:binding_curse\"}],HideFlags:63,fisma:1}"
+			},
+			{
+				"function": "minecraft:set_name",
+				"name": {"italic":false,"translate":"item.fi.ench_shard"}
+			}]
+		}]
+	}]
+}

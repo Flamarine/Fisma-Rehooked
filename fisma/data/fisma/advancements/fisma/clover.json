@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:grass"
+		},
+		"title":{
+			"text": "luck clover"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"parent": "fisma:fisma/root",
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"clover": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+			"item": {
+					"item": "minecraft:tropical_fish",
+					"nbt":	"{fisma:'clover'}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/clover"
+	}
+}

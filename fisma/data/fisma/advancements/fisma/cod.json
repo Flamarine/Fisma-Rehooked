@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:cod"
+		},
+		"title":{
+			"translate": "item.minecraft.cod"
+		},
+		"description": {
+			"translate": "advancements.fi.cod.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/handbook",
+	"criteria": {
+		"cod": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:cod"
+				}]
+			}
+		},
+		"codu": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:cod_bucket"
+				}]
+			}
+		}
+	},
+	"requirements":[["cod","codu"]]
+}

@@ -1,0 +1,125 @@
+{
+	"type": "minecraft:fishing",
+	"functions": [{
+		"function": "furnace_smelt",
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_f:1}"
+			}
+		}]
+	}],
+	"pools": [{
+		"rolls": 1.0,
+		"entries": [{
+			"type": "minecraft:item",
+			"weight": 80,
+			"name": "minecraft:cod"
+		},
+		{
+			"type": "minecraft:item",
+			"weight": 30,
+			"name": "minecraft:salmon"
+		},
+		{
+			"type": "minecraft:item",
+			"weight": 5,
+			"name": "minecraft:tropical_fish"
+		},
+		{
+			"type": "minecraft:item",
+			"weight": 15,
+			"name": "minecraft:pufferfish"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 3,
+			"name": "fi:creeper_leech"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:jellyfish"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 5,
+			"name": "fi:crayfish"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 3,
+			"name": "fi:mola"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 1,
+			"name": "fi:mystus"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 2,
+			"name": "fi:sea_cucumber"
+		},
+        {
+          "type": "minecraft:loot_table",
+          "weight": 500,
+          "conditions": [
+            {
+              "condition": "minecraft:location_check",
+              "predicate": {
+                  "biome": "minecraft:nether"
+              }
+            }
+          ],
+          "name": "fi:flame_fish"
+        },
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:grass_carp"
+		},
+        {
+          "type": "minecraft:loot_table",
+          "weight": 500,
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:the_end"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:small_end_islands"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:end_midlands"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:end_highlands"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:end_barrens"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "fi:end_ball"
+        }]
+	}]
+}

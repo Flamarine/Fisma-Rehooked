@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fishing_rod"
+		},
+		"title":{
+			"text": "set",
+			"color": "green"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"set": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+			"item": {
+					"item": "minecraft:fishing_rod",
+					"nbt":	"{fisma:1}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/plug_set"
+	}
+}

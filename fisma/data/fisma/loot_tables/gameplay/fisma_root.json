@@ -1,0 +1,118 @@
+{
+	"pools": [{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:0}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fishing"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:1}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/1"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:2}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/2"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:3}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/3"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:4}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/4"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:5}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/5"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:6}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:empty"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:7}"
+			}
+		}],
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma/7"
+		}]
+	},
+	{
+		"conditions": [{
+			"condition": "minecraft:match_tool",
+			"predicate": {
+				"nbt": "{fisma_t:99}"
+			}
+		}],
+		"rolls": 10,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fishing"
+		}]
+	}]
+}

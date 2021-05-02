@@ -1,0 +1,30 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tnt"
+		},
+		"title":{
+			"translate": "advancements.fi.tnt.title",
+			"color": "red"
+		},
+		"description": {
+			"translate": "advancements.fi.tnt.description"
+		}
+	},
+	"parent": "fisma:fisma/getrod",
+	"criteria": {
+		"tntadv": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"rod": {
+					"item": "minecraft:fishing_rod",
+					"nbt":	"{fisma_t:3}"
+				},
+				"item": {
+					"item": "minecraft:structure_void",
+					"nbt":	"{fisma_run:1,fisma_t:\"tnt\"}"
+				}
+			}
+		}
+	}
+}

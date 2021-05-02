@@ -1,0 +1,26 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:enchanted_book"
+		},
+		"title":{
+			"translate": "advancements.fi.handbook.title"
+		},
+		"description": {
+			"translate": "advancements.fi.handbook.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/getrod",
+	"criteria": {
+		"tropical_fish": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish",
+					"nbt":	"{fisma:1}"
+				}]
+			}
+		}
+	}
+}

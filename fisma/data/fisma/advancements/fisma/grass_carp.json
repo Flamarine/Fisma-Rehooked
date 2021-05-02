@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tropical_fish",
+			"nbt": "{CustomModelData:613008}"
+		},
+		"title":{
+			"translate": "item.fi.grass_carp"
+		},
+		"description": {
+			"translate": "advancements.fi.fish8.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/handbook",
+	"criteria": {
+		"fi8": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish",
+					"nbt":	"{fisma:1,CustomModelData:613008}"
+				}]
+			}
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:grass"
+		},
+		"title":{
+			"text": "luck"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"parent": "fisma:fisma/root",
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"luck": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"rod": {
+					"item": "minecraft:fishing_rod",
+					"nbt":	"{fisma_t:4}"
+				},
+				"item": {
+					"item": "minecraft:structure_void",
+					"nbt":	"{fisma_run:1,fisma_t:\"luck\"}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/luck",
+		"experience":150
+	}
+}

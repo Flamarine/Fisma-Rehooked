@@ -1,0 +1,17 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "minecraft:fishing_rod",
+			"functions": [{
+				"function": "minecraft:set_nbt",
+				"tag": "{fisma:1,fisma_t:2,CustomModelData:613002}"
+			},
+			{
+				"function": "minecraft:set_name",
+				"name": {"italic":false,"translate":"item.fi.ocean_rod"}
+			}]
+		}]
+	}]
+}

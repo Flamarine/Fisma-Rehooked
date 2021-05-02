@@ -1,0 +1,31 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:suspicious_stew"
+		},
+		"title":{
+			"text": "stew",
+			"color": "blue"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"parent": "fisma:fisma/root",
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"stew": {
+			"trigger": "minecraft:consume_item",
+			"conditions": {
+			"item": {
+					"item": "minecraft:suspicious_stew",
+					"nbt":	"{fisma:1}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/stew"
+	}
+}

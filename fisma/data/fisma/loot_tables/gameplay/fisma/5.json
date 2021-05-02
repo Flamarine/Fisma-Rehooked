@@ -1,0 +1,32 @@
+{
+	"type": "minecraft:fishing",
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:item",
+			"weight": 12,
+			"quality": 1,
+			"functions": [{
+				"function": "minecraft:set_nbt",
+				"tag": "{fisma_run:1,fisma_t:\"magnet\"}"
+			}],
+			"name": "minecraft:structure_void"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 2,
+			"quality": -1,
+			"name": "fisma:gameplay/fishing/junk"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 1,
+			"name": "fisma:gameplay/fishing/junk"
+		},
+		{
+			"type": "minecraft:empty",
+			"weight": 3,
+			"quality": -2
+		}]
+	}]
+}

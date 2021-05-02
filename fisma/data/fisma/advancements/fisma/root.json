@@ -1,0 +1,24 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:fishing_rod"
+		},
+		"title":{
+			"translate": "advancements.fi.root.title",
+			"color": "blue"
+		},
+		"description": {
+			"translate": "advancements.fi.root.description"
+		},
+		"frame": "goal",
+		"background": "minecraft:textures/gui/options_background.png"
+	},
+	"criteria": {
+		"root": {
+			"trigger": "minecraft:tick"
+		}
+	},
+	"rewards": {
+		"function": "fisma:first"
+	}
+}

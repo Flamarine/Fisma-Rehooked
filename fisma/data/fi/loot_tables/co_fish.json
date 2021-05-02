@@ -1,0 +1,17 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "minecraft:tropical_fish",
+			"functions": [{
+				"function": "minecraft:set_nbt",
+				"tag": "{CustomModelData:613000,fisma:1}"
+			},
+			{
+				"function": "minecraft:set_name",
+				"name": {"italic":false,"translate":"item.fi.co_fish"}
+			}]
+		}]
+	}]
+}

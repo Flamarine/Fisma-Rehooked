@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "name": "fisma:gameplay/fishing"
+        }
+      ]
+    },
+    {
+      "rolls": 1,
+      "entries": [
+		{
+          "type": "minecraft:item",
+          "weight": 6,
+          "quality": -1,
+          "functions": [
+            {
+              "function": "minecraft:set_nbt",
+              "tag": "{fisma_run:1,fisma_t:\"luck\"}"
+            }
+          ],
+          "name": "minecraft:structure_void"
+        },
+		{
+          "type": "minecraft:empty",
+          "weight": 18,
+          "quality": 1
+        }
+      ]
+    }
+  ]
+}

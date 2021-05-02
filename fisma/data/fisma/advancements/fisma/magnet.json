@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:iron_ingot"
+		},
+		"title":{
+			"text": "magnet",
+			"color": "red"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"parent": "fisma:fisma/root",
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"magnet": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"rod": {
+					"item": "minecraft:fishing_rod",
+					"nbt":	"{fisma_t:5}"
+				},
+				"item": {
+					"item": "minecraft:structure_void",
+					"nbt":	"{fisma_run:1,fisma_t:\"magnet\"}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/magnet"
+	}
+}

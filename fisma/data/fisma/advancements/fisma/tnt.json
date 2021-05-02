@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tnt"
+		},
+		"title":{
+			"text": "tnt",
+			"color": "red"
+		},
+		"description": {
+			"text": "fisma"
+		},
+		"parent": "fisma:fisma/root",
+		"show_toast": "false",
+		"announce_to_chat": "false"
+	},
+	"criteria": {
+		"tnt": {
+			"trigger": "minecraft:fishing_rod_hooked",
+			"conditions": {
+				"rod": {
+					"item": "minecraft:fishing_rod",
+					"nbt":	"{fisma_t:3}"
+				},
+				"item": {
+					"item": "minecraft:structure_void",
+					"nbt":	"{fisma_run:1,fisma_t:\"tnt\"}"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"function": "fisma:item_effect/tnt"
+	}
+}

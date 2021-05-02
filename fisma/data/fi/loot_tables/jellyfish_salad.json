@@ -1,0 +1,18 @@
+{
+	"pools": [{
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:item",
+			"name": "minecraft:suspicious_stew",
+			"functions": [{
+				"function": "minecraft:set_stew_effect",
+				"effects": [
+					{"type":"conduit_power","duration":{"min":2,"max":10}}
+				]
+			},{
+				"function": "minecraft:set_name",
+				"name": {"italic":false,"translate":"item.fi.jellysalad"}
+			}]
+		}]
+	}]
+}

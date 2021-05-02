@@ -1,0 +1,34 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tropical_fish"
+		},
+		"title":{
+			"translate": "item.minecraft.tropical_fish"
+		},
+		"description": {
+			"translate": "advancements.fi.tropical_fish.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/handbook",
+	"criteria": {
+		"tropical_fish": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish"
+				}]
+			}
+		},
+		"tropical_fishu": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish_bucket"
+				}]
+			}
+		}
+	},
+	"requirements":[["tropical_fish","tropical_fishu"]]
+	}

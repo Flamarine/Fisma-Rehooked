@@ -1,0 +1,27 @@
+{
+	"display": {
+		"icon": {
+			"item": "minecraft:tropical_fish",
+			"nbt": "{CustomModelData:613002}"
+		},
+		"title":{
+			"translate": "item.fi.jellyfish"
+		},
+		"description": {
+			"translate": "advancements.fi.fish2.description"
+		},
+		"hidden":"true"
+	},
+	"parent": "fisma:fisma/handbook",
+	"criteria": {
+		"fi2": {
+			"trigger": "minecraft:inventory_changed",
+			"conditions": {
+					"items": [{
+					"item": "minecraft:tropical_fish",
+					"nbt":	"{fisma:1,CustomModelData:613002}"
+				}]
+			}
+		}
+	}
+}

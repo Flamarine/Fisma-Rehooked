@@ -1,0 +1,5 @@
+#execute as @e[type=minecraft:fishing_bobber,scores={fiUID=0..,fihold=6}] at @s if block ~ ~-0.1 ~ #fisma:lava unless entity @e[tag=magma,limit=1,distance=..1] run tp ~ ~0.5 ~
+#execute as @e[type=minecraft:fishing_bobber,scores={fiUID=0..,fihold=6}] at @s if block ~ ~-0.1 ~ #fisma:lava unless entity @e[tag=magma,limit=1,distance=..1] run data merge entity @s {Motion:[0d,0.4d,0d]}
+execute as @e[type=minecraft:fishing_bobber,scores={fiUID=0..,fihold=6}] at @s if block ~ ~-0.2 ~ #fisma:lava unless entity @e[tag=magma,limit=1,distance=..1] run summon endermite ~ ~-0.2 ~ {Invulnerable:1b,NoGravity:1b,Silent:1b,NoAI:1b,Tags:[magma],Lifetime:300}
+#execute as @e[type=minecraft:fishing_bobber,scores={fiUID=0..,fihold=6}] at @s if block ~ ~0.5 ~ #fisma:lava run particle minecraft:flame ~ ~1 ~ 0.25 0.1 0.25 0 10
+#execute as @e[type=minecraft:fishing_bobber,scores={fiUID=0..,fihold=6}] at @s if block ~ ~1 ~ #fisma:lava run particle minecraft:smoke ~ ~3 ~ 0.1 0.4 0.1 0.03 10

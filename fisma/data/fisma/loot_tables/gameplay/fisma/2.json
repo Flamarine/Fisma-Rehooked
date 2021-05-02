@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+		"rolls": 1,
+		"entries": [{
+			"type": "minecraft:loot_table",
+			"name": "fisma:gameplay/fisma_ex/ocean_fishing"
+		}]
+	}
+  ]
+}

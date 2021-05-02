@@ -1,0 +1,62 @@
+{
+  "type": "minecraft:fishing",
+  "pools": [
+    {
+		"conditions": [
+				{
+					"condition": "minecraft:inverted",
+					"term": {
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"nbt": "{fisma:1}"
+						}
+					}
+				}
+			],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 10,
+          "quality": -4,
+          "name": "minecraft:gameplay/fishing/junk"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 5,
+          "quality": 4,
+          "name": "minecraft:gameplay/fishing/treasure"
+        },
+        {
+          "type": "minecraft:loot_table",
+          "weight": 85,
+          "quality": -5,
+          "name": "minecraft:gameplay/fishing/fish"
+        },
+        {
+          "type": "minecraft:empty",
+          "weight": 1,
+          "quality": -1
+        }
+      ]
+    },
+    {
+		"conditions": [
+				{
+					"condition": "minecraft:match_tool",
+					"predicate": {
+						"nbt": "{fisma:1}"
+						}
+				}
+			],
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:loot_table",
+          "weight": 1,
+          "name": "fisma:gameplay/fisma_root"
+        }
+      ]
+    }
+  ]
+}

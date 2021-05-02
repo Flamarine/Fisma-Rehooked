@@ -1,0 +1,214 @@
+{
+  "type": "minecraft:fishing",
+	"functions": [{
+				"function": "furnace_smelt",
+				"conditions": [{
+				"condition": "minecraft:match_tool",
+				"predicate": {
+				"nbt": "{fisma_f:1}"
+							}
+						}]
+				}],
+  "pools": [{
+      "rolls": 1,
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:frozen_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_frozen_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:cold_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_cold_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:warm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_warm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:beach"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:stone_shore"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:snowy_beach"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:mushroom_field_shore"
+                  }
+                }
+              ]
+            }
+          ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "weight": 60,
+          "name": "minecraft:cod"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 25,
+          "name": "minecraft:salmon"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 40,
+          "conditions": [
+            {
+              "condition": "minecraft:alternative",
+              "terms": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_lukewarm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:warm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:deep_warm_ocean"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:beach"
+                  }
+                },
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:mushroom_field_shore"
+                  }
+                }
+              ]
+            }
+          ],
+          "name": "minecraft:tropical_fish"
+        },
+        {
+          "type": "minecraft:item",
+          "weight": 15,
+          "name": "minecraft:pufferfish"
+        },
+		{
+			"type": "minecraft:loot_table",
+			"weight": 6,
+			"name": "fi:jellyfish"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 2,
+			"name": "fi:crayfish"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:mola"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:mystus"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:sea_cucumber"
+		},
+		{
+			"type": "minecraft:loot_table",
+			"weight": 4,
+			"name": "fi:grass_carp"
+		}
+      ]
+    }
+  ]
+}
